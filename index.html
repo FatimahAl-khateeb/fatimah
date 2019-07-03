@@ -68,9 +68,12 @@
             color: #1abc9c !important;
         }
 
-        /* by eshbelia*/
-        #eduYear {
-            color: aquamarine;
+        /* added recently*/
+        .font {
+            font:  20px Montserrat, sans-serif;
+        }
+        .eduYear {
+            color: #1abc9c;
         }
 
         .paddingProg {
@@ -103,8 +106,20 @@
         #WhoAmI {
             margin-top: 100px;
         }
+
         .prog-col {
             color: #1abc9c;
+        }
+
+        .DemoLink {
+            color: #e3e6e5;
+            text-decoration-line: underline;
+        }
+        .DemoLink:hover {
+            color:  #1abc9c;
+        }
+        .marginup {
+            margin-top: 93px;
         }
 
         /*form style */
@@ -176,6 +191,7 @@
             transition: 300ms ease all;
             left: 0%;
         }
+
     </style>
 </head>
 
@@ -213,7 +229,7 @@
     <!-- Second Container -->
     <div id="Education" class="container-fluid bg-2 text-center">
         <h3 class="margin">Education </h3>
-        <p><span id="eduYear"><b>2014 - 2018 :</b></span> Bachelor Degree - Computer Science</p>
+        <p><span class="eduYear"><b>2014 - 2018 :</b></span> Bachelor Degree - Computer Science</p>
         <p>Private Zarqa'a University</p>
         <p>GPA : very good (82.7%)</p>
 
@@ -221,11 +237,11 @@
 
     <!-- Third Container -->
     <div id="Skills" class="container-fluid bg-3 text-center">
-        <h3 >Skills</h3><br>
+        <h3>Skills</h3><br>
         <div class="paddingProg">Html - Html5
             <div class="progress">
                 <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="50" style="width:80%">
-                    80% 
+                    80%
                 </div>
             </div>
         </div>
@@ -233,7 +249,7 @@
         <div class="paddingProg">CSS
             <div class="progress">
                 <div class="progress-bar progress-bar-success progress-bar-striped " role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="50" style="width:70%">
-                    70% 
+                    70%
                 </div>
             </div>
         </div>
@@ -249,7 +265,7 @@
         <div class="paddingProg">JQUERY
             <div class="progress">
                 <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="50" style="width:75%">
-                    75% 
+                    75%
                 </div>
             </div>
         </div>
@@ -257,7 +273,7 @@
         <div class="paddingProg">BOOTSTRAP
             <div class="progress">
                 <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="50" style="width:80%">
-                    80% 
+                    80%
                 </div>
             </div>
         </div>
@@ -266,52 +282,71 @@
     <!-- Fourth Container -->
     <div id="MiniProjects" class="container-fluid bg-2 text-center">
         <h3 class="margin">Mini - Projects </h3>
-        <p><span id="eduYear"><b>2014 - 2018 :</b></span> Bachelor Degree - Computer Science</p>
-        <p>Private Zarqa'a University</p>
-        <p>GPA : very good (82.7%)</p>
-
-    </div>
-
-    <!-- Fifth Container -->
-    <div id="ContactMe" class="container-fluid bg-1 text-center">
-        <h3 class="margin">Contact me</h3>
-        <!-- Form-->
-        <form action="/action_page.php">
-            <!--    here to php file -->
-            <div class="group">
-                <input type="text" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                <label>Your Name</label>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>JS-Calculator <a href="https://fatimahal-khateeb.github.io/javascript/" class="DemoLink font">(My Demo)</a></h3>
+                <p> Simple Java Script Calculator</p>
+                <img src="w+b+brown.jpg" class="img-responsive margin marginup" style="width:100%" alt="Image">
             </div>
-            <div class="group">
-                <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                <label>Your Email</label>
+            <div class="col-sm-4">
+                <h3>JQuery-Calculator<a href="https://fatimahal-khateeb.github.io/jquery/" class="DemoLink font">(My Demo)</a></h3>
+                <p> Simple JQuery Calculator</p>
+                <img src="w+b2.jpg" class="img-responsive margin marginup" style="width:100%" alt="Image">
             </div>
-            <div class="group">
-                <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                <label>Your Message</label>
+            <div class="col-sm-4">
+                <h3>Bootstrap<a href="https://fatimahal-khateeb.github.io/BootstrapSidebar/" class="DemoLink font">(My Demo)</a></h3>
+                <p> Simple sidebar using Bootstrap3 , when click on user, table will filled by user information from api
+                    <a href="https://jsonplaceholder.typicode.com/users" class="eduYear">https://jsonplaceholder.typicode.com/users</a>
+                    , clicking on save button will post request to same api .
+                </p>
+                <img src="w+b3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
             </div>
-            <button type="button" id="btnsave" class="btn " data-dismiss="modal">Send Message</button><br>
+        </div>
+
+        <!-- Fifth Container -->
+        <div id="ContactMe" class="container-fluid bg-1 text-center">
+            <h3 class="margin">Contact me</h3>
+            <!-- Form-->
+            <form action="/action_page.php">
+                <!--    here to php file -->
+                <div class="group text-center">
+                    <input type="text" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Your Name</label>
+                </div>
+                <div class="group text-center">
+                    <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Your Email</label>
+                </div>
+                <div class="group text-center">
+                    <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Your Message</label>
+                </div>
+                <button type="button" id="btnsave" class="btn " data-dismiss="modal">Send Message</button><br>
 
 
 
-        </form>
+            </form>
 
-    </div>
+        </div>
 
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-       
-        <!-- address -->
-        <span id="addressIcon" class="glyphicon glyphicon-map-marker"> </span>
-        <span class="text">Bayader, Amman</span><br>
+        <!-- Footer -->
+        <footer class="container-fluid bg-4 text-center">
 
-        <!-- phone no.-->
-        <span id="phoneIcon" class="glyphicon glyphicon-phone"> </span>
-        <span class="text">+962 780 086 418</span>
+            <!-- address -->
+            <span id="addressIcon" class="glyphicon glyphicon-map-marker"> </span>
+            <span class="text">Bayader, Amman</span><br>
 
-        <!-- email-->
-        <span id="emailIcon" class="glyphicon glyphicon-envelope"> </span>
-        <span class="text">fatimah.alkhateeb111@gmail.com</span>
-    </footer>
+            <!-- phone no.-->
+            <span id="phoneIcon" class="glyphicon glyphicon-phone"> </span>
+            <span class="text">+962 780 086 418</span>
 
-</body></html>
+            <!-- email-->
+            <span id="emailIcon" class="glyphicon glyphicon-envelope"> </span>
+            <span class="text">fatimah.alkhateeb111@gmail.com</span>
+        </footer>
+
+</body>
+
+</html>
+
+   

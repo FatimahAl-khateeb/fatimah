@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,9 +131,14 @@
         }
 
         /*form style */
-       
+        div .contentPadding {
+            margin-left: 35%;
+        }
+
+        
+
         .group {
-            
+
             position: relative;
             margin: 45px;
         }
@@ -231,7 +237,7 @@
     <div class="container-fluid bg-1 text-center">
         <h3 id="WhoAmI" class="margin">Who Am I?</h3>
         <img src="personalphoto%20(2).jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="350">
-        <h3>Fresh Developer ready for wading in any new experience .</h3>
+        <h3>Fresh .Net Developer ready for wading in any new experience .</h3>
     </div>
 
     <!-- Second Container -->
@@ -285,6 +291,14 @@
                 </div>
             </div>
         </div>
+        <div class="paddingProg">C#
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="50" style="width:75%">
+                    75%
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Fourth Container -->
@@ -313,22 +327,24 @@
     </div>
     <!-- Fifth Container -->
     <div id="ContactMe" class="container-fluid bg-1 text-center">
-        <!--what bg-1 means ? -->
+
         <h3 class="margin">Contact me</h3>
         <!-- Form-->
         <form action="/action_page.php">
             <!--    here to php file -->
-            <div class="text-center group">
-                <input type="text" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                <label>Your Name</label>
-            </div>
-            <div class="text-center group ">
-                <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                <label>Your Email</label>
-            </div>
-            <div class="text-center group ">
-                <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                <label>Your Message</label>
+            <div class="contentPadding">
+                <div class="text-center group">
+                    <input type="text" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Your Name</label>
+                </div>
+                <div class="text-center group ">
+                    <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Your Email</label>
+                </div>
+                <div class="text-center group ">
+                    <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                    <label>Your Message</label>
+                </div>
             </div>
             <button type="button" id="btnsave" class="btn " data-dismiss="modal">Send Message</button><br>
 
@@ -355,3 +371,4 @@
     </footer>
 
 </body></html>
+

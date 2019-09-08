@@ -131,11 +131,6 @@
         }
 
         /*form style */
-        div .contentPadding {
-            margin-left: 35%;
-        }
-
-        
 
         .group {
 
@@ -206,6 +201,21 @@
             transition: 300ms ease all;
             left: 0%;
         }
+
+         /*  for pc screen   */
+        @media only screen and (min-width: 580px) {
+            div .contentPadding {
+                margin-left: 20%;
+            }
+        }
+        
+        /*  for pc screen   */
+        @media only screen and (min-width: 980px) {
+            div .contentPadding {
+                margin-left: 35%;
+            }
+        }
+
     </style>
 </head>
 
@@ -330,28 +340,29 @@
 
         <h3 class="margin">Contact me</h3>
         <!-- Form-->
-        <form action="/action_page.php">
-            <!--    here to php file -->
-            <div class="contentPadding">
-                <div class="text-center group">
-                    <input type="text" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                    <label>Your Name</label>
+        <div class="formPadding">
+            <form action="/action_page.php">
+                <!--    here to php file -->
+                <div class="contentPadding">
+                    <div class="text-center group">
+                        <input type="text" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="text-center group ">
+                        <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                        <label>Your Email</label>
+                    </div>
+                    <div class="text-center group ">
+                        <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
+                        <label>Your Message</label>
+                    </div>
                 </div>
-                <div class="text-center group ">
-                    <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                    <label>Your Email</label>
-                </div>
-                <div class="text-center group ">
-                    <input type="email" id="name" required="required" /><span class="highlight"></span><span class="bar"></span>
-                    <label>Your Message</label>
-                </div>
-            </div>
-            <button type="button" id="btnsave" class="btn " data-dismiss="modal">Send Message</button><br>
+                <button type="button" id="btnsave" class="btn " data-dismiss="modal">Send Message</button><br>
 
 
 
-        </form>
-
+            </form>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -370,5 +381,8 @@
         <span class="text">fatimah.alkhateeb111@gmail.com</span>
     </footer>
 
-</body></html>
+</body>
+
+</html>
+
 
